@@ -1,5 +1,6 @@
 // const { coffeeStock, isCoffeeMachineReady } = require('./state');
 import { coffeeStock as coffee, isCoffeeMachineReady } from "./state.js";
+import _ from 'lodash';
 
 const displayStock = stock => {
     for (const type in stock) {
@@ -20,3 +21,8 @@ const makeCoffee = (type, miligrams) => {
 }
 
 makeCoffee('robusta', 80);
+
+const myArray = [1, 2, 3, 4];
+const sum = _.sum(myArray);
+
+console.log(`mencoba lodash ${sum}`);
